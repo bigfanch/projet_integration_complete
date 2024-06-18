@@ -1,8 +1,18 @@
 import unittest
 import math
-from geometry import rectangle_area, rectangle_perimeter, circle_area, circle_circumference
+from geometry import square_area, square_perimeter, rectangle_area, rectangle_perimeter, circle_area, circle_circumference
 
 class TestCalculator(unittest.TestCase):
+    def test_square_area(self):
+        self.assertEqual(square_area(3), 9)
+        self.assertEqual(square_area(-1), 1)
+        self.assertEqual(square_area(0), 0)
+
+    def test_square_perimeter(self):
+        self.assertEqual(square_perimeter(3), 12)
+        self.assertEqual(square_perimer(-1), -4)
+        self.assertEqual(square_perimeter(0), 0)
+
     def test_rectangle_area(self):
         self.assertEqual(rectangle_area(2, 3), 6)
         self.assertEqual(rectangle_area(-1, 1), -1)
