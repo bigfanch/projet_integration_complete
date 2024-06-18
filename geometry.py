@@ -4,6 +4,24 @@
 """
 import math
 
+def square_area(side):
+    """
+    Compute the area of a square
+    
+    @param side The dimension of a side of the square
+    @return The area of the square
+    """
+    return (side * side)
+
+def square_perimeter(side):
+    """
+    Compute the perimeter of a square
+    
+    @param side The dimension of a side of the square
+    @return The perimeter of the square
+    """
+    return (side * 4)
+
 def rectangle_area(length, width):
     """
     Compute the area of a rectangle
